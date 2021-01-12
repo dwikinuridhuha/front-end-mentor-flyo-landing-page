@@ -1,0 +1,598 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #c9c9c9;
+}
+
+body {
+    background-color: #1C2431;
+    overflow-x: hidden;
+    font-family: Poppins, sans-serif;
+}
+
+.wrapper {
+    padding: 0 5%;
+}
+
+/*awal menu */
+nav.navigation {
+    margin: 2% 0 4%;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.navigation a {
+    display: flex;
+    align-items: center;
+}
+
+nav.navigation img {
+    height: 30px;
+}
+
+.menu-lists ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu-lists ul li {
+    padding: 5px 10px;
+    margin: 5px 15px;
+}
+
+.menu-lists ul li:hover a {
+    color: cadetblue;
+}
+
+/*akhir menu */
+
+/*awal hero*/
+.hero {
+    text-align: center;
+    position: relative;
+    z-index: -5;
+}
+
+/*akhir hero*/
+
+/*home awal*/
+.section-1 {
+    padding-top: 10px;
+    position: relative;
+    /*background-color: darkslateblue;*/
+}
+
+.bg-section-home {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+.bg-section-home.mobile-view {
+    display: none;
+}
+
+.home {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.home .home-info {
+    margin: 0 auto;
+    /*background-color: lightgreen;*/
+    max-width: 500px;
+    padding-top: 5%;
+}
+
+.home .home-info h2 {
+    margin: 20px 0;
+    line-height: 2.5rem;
+}
+
+.home .home-info p {
+    margin-bottom: 15px;
+}
+
+.home .home-info .btn {
+    background-color: cadetblue;
+    outline: none;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: white;
+}
+
+.home .home-info .btn:hover {
+    transform: scale(.9);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/*home akhir*/
+
+/*awal feature*/
+.section-2 {
+    padding-top: 100px;
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    justify-content: center;
+}
+
+.feature-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem;
+}
+
+.feature {
+    text-align: center;
+    width: 350px;
+}
+
+.feature img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.feature h1 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.feature p {
+    text-align: justify;
+}
+
+/*akir feature*/
+
+/*awal team*/
+.section-3 {
+    padding-top: 150px;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.teams {
+    display: flex;
+}
+
+.team-text {
+    align-self: center;
+    margin-left: 50px;
+}
+
+.team-text h1 {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.team-text p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.team-text .team-link::after {
+    content: "";
+    position: absolute;
+    width: 31.5%;
+    height: 2px;
+    background-color: cadetblue;
+    left: 0;
+    bottom: -5px;
+}
+
+.team-text .team-link {
+    color: cadetblue;
+    display: flex;
+    position: relative;
+}
+
+.team-text .team-link img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    align-self: center;
+}
+
+/*akhir team*/
+
+/*awal testimional*/
+.section-4 {
+    padding-top: 150px;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.testimonials::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg-quotes.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    z-index: -1;
+}
+
+.testimonials {
+    z-index: 2;
+    position: relative;
+    display: flex;
+}
+
+.testimonial {
+    padding: 25px;
+    background-color: hsl(219, 30%, 18%);
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(240, 37%, 11%);
+}
+
+.testimonial p {
+    text-align: justify;
+}
+
+.testimonial .profile {
+    margin-top: 15px;
+    display: flex;
+}
+
+.testimonial .profile .profile-image img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+}
+
+.testimonial .profile .profile-text h4 {
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
+.testimonial .profile .profile-text p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/*awal testimional*/
+
+/*awal cta*/
+.section-5 {
+    padding-top: 100px;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.cta {
+    width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: hsl(219, 30%, 18%);
+    padding: 30px 50px;
+    box-shadow: 0 0 5px hsl(240, 37%, 11%);
+    z-index: 10;
+    position: relative;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.cta p {
+    margin: 0 auto 30px;
+    width: 95%;
+}
+
+.cta input.email {
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 60%;
+    color: #1C2431;
+    outline: none;
+    border: none;
+}
+
+.cta button {
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: cadetblue;
+    cursor: pointer;
+    transition: background-color .5s ease;
+    color: white;
+}
+
+.cta button:hover {
+    background-color: #566786;
+}
+
+/*akhir cta*/
+
+/*last*/
+.footer-section {
+    position: relative;
+    margin-top: -100px;
+    padding-top: 200px;
+    background-color: hsl(216, 53%, 9%);
+    z-index: 1;
+    padding-bottom: 50px;
+}
+
+.footer-text {
+    display: grid;
+    grid-template-columns: 31% 23% 13% 14% 17%;
+}
+
+.footer {
+    margin: 20px 0;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer p .footer-icon {
+    margin-right: 10px;
+}
+
+.footer.location {
+    display: flex;
+    margin-right: 65px;
+}
+
+.footer.location .location-img {
+    margin-right: 10px;
+}
+
+.footer.location h4 {
+    text-align: justify;
+}
+
+.social-icon {
+    border: 1px solid #c9c9c9;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin: 5px;
+    transition: background-color .5s ease;
+}
+
+.social-icon:hover {
+    background-color: cadetblue;
+}
+
+.challenge {
+    text-align: center;
+}
+
+.challenge a {
+    color: cadetblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.challenge a:hover {
+    transition: color .5s ease;
+    color: #566786;
+}
+
+/*last*/
+
+/*responsife view*/
+@media screen and (max-width: 1000px) {
+    /*nav*/
+    nav.navigation a {
+        font-size: 12px;
+    }
+
+    nav.navigation img {
+        height: 20px;
+    }
+
+    .menu-lists ul li {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    /*nav*/
+    /*hero*/
+    .hero img {
+        height: 230px;
+    }
+
+    /*hero*/
+    /*home*/
+    .home {
+        margin-bottom: 0;
+    }
+
+    .bg-section-home.mobile-view {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .bg-section-home.desktop-view {
+        display: none;
+    }
+
+    .home .home-info {
+        max-width: 300px;
+    }
+
+    .home .home-info h2 {
+        font-size: 20px;
+        line-height: 1.7rem;
+    }
+
+    .home .home-info p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    /*home*/
+    /*feature*/
+    .feature-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+    }
+
+    .feature {
+        width: 300px;
+    }
+
+    .feature img {
+        height: 40px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+
+    /*feature*/
+    /*awal team*/
+    .section-3 {
+        padding-top: 100px;
+    }
+
+    .teams {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teams div img {
+        width: 300px;
+    }
+
+    .team-text {
+        padding: 80px 0;
+        margin: 0;
+    }
+
+    .team-text h1 {
+        text-align: left;
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .team-text p {
+        font-size: 15px;
+    }
+
+    .team-text .team-link::after {
+        width: 54%;
+    }
+
+    /*akhir team*/
+    /*awal testimional*/
+    .section-4 {
+        padding-top: 80px;
+    }
+
+    .testimonials::before {
+        left: 55px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        margin: 0 40px 10px;
+    }
+
+    .testimonial p {
+        font-size: 13px;
+    }
+
+    .testimonial .profile .profile-image img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .testimonial .profile .profile-text h4 {
+        margin-top: -2px;
+        font-weight: 400;
+        margin-bottom: 1px;
+    }
+
+    .testimonial .profile .profile-text p {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    /*awal testimional*/
+    /*awal cta*/
+    .section-5 {
+        padding-top: 100px;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .cta h2 {
+        font-size: 20px;
+    }
+
+    .cta p {
+        font-size: 15px;
+    }
+
+    .cta input.email {
+        padding: 20px 20px;
+        border-radius: 50px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cta button {
+        width: 100%;
+        padding: 20px 20px;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .cta button:hover {
+        background-color: #566786;
+    }
+
+    /*cta*/
+    /*last*/
+    .footer-section {
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .footer.location {
+        margin-right: 10px;
+    }
+
+    .footer-text {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .center-mobile {
+        text-align: center;
+    }
+
+    /*last*/
+}
